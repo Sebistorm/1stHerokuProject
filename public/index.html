@@ -249,8 +249,10 @@
 
         const btnGoCrazy = document.getElementById("btnGoCrazy");
         btnGoCrazy.addEventListener("click", () => {
-            if (days[todaysDayIndex] === 5) {
+           // console.log(todaysDayIndex, days[todaysDayIndex])
+            if (days[todaysDayIndex] == "Friday") {
                 document.querySelector("body").classList.toggle("go-crazy");
+                deadpoolImg.classList.toggle("img-deadpool-animation")
                 deadpoolImg.classList.toggle("img-deadpool-animation-crazy");
                 h1.classList.toggle("rotate");
             } else {
